@@ -1,0 +1,71 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "organizationId": 1,
+            "predecessor": null,
+            "code": "CA",
+            "name": "Categoría A",
+            "status": "ACTIVE",
+            "description": null,
+            "documentation": null,
+            "childs": [
+                {
+                    "id": 2,
+                    "organizationId": 1,
+                    "predecessor": null,
+                    "code": "CB",
+                    "name": "Categoría B",
+                    "status": "ACTIVE",
+                    "description": null,
+                    "documentation": null,
+                    "module": {
+                        "id": 1
+                    }
+                },
+                {
+                    "id": 3,
+                    "organizationId": 1,
+                    "predecessor": null,
+                    "code": "CC",
+                    "name": "Categoría C",
+                    "status": "ACTIVE",
+                    "description": null,
+                    "documentation": null,
+                    "module": {
+                        "id": 1
+                    }
+                }
+            ],
+            "module": {
+                "id": 1
+            }
+        },
+        {
+            "id": 2,
+            "organizationId": 1,
+            "predecessor": null,
+            "code": "CB",
+            "name": "Categoría B",
+            "status": "ACTIVE",
+            "description": null,
+            "documentation": null,
+            "module": {
+                "id": 1
+            }
+        },
+        {
+            "id": 3,
+            "organizationId": 1,
+            "predecessor": null,
+            "code": "CC",
+            "name": "Categoría C",
+            "status": "ACTIVE",
+            "description": null,
+            "documentation": null,
+            "module": {
+                "id": 1
+            }
+        }
+    ]
+}
