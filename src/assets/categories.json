@@ -44,7 +44,9 @@
         {
             "id": 2,
             "organizationId": 1,
-            "predecessor": null,
+            "predecessor": {
+                "id": 1
+            },
             "code": "CB",
             "name": "Categoría B",
             "status": "ACTIVE",
@@ -56,6 +58,21 @@
         },
         {
             "id": 3,
+            "organizationId": 1,
+            "predecessor": {
+                "id": 1
+            },
+            "code": "CC",
+            "name": "Categoría C",
+            "status": "ACTIVE",
+            "description": null,
+            "documentation": null,
+            "module": {
+                "id": 1
+            }
+        },
+        {
+            "id": 4,
             "organizationId": 1,
             "predecessor": null,
             "code": "CC",

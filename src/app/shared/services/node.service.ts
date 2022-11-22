@@ -8,23 +8,8 @@ export class NodeService {
 
   constructor(private http: HttpClient) { }
 
-  getFiles():Observable<any>{
-    let nodes:TreeNode[] = [];
-    return this.http.get('assets/categories.json').pipe(
-      map( (categories:any) => { 
-        for (let category of categories.data){
-          let node: TreeNode = {
-            "data": "Documents Folder",
-            "expandedIcon": "pi pi-folder-open",
-            "collapsedIcon": "pi pi-folder",
-          };
-          node.label = category.name;
-          node.children = category.childs;
-          nodes.push(node);
-        }
-        return nodes;
-      })
-    );
+  getFiles(): Observable<any>{
+    return this.http.get('assets/categories.json');
   }
 
   getLazyFiles():Observable<any>{
